@@ -1,5 +1,6 @@
+"use strict";
 function log(str) {
     console.log(str);
 }
-var greeting = 'Hello World';
+const greeting = 'Hello World';
 log(greeting);
