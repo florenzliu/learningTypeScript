@@ -1,9 +1,12 @@
 {
   "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7",
     "typescript": "^4.2.2"
   },
   "license": "ISC",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "npx concurrently -n COMPILER,NODEMON -c yellow,blue \"tsc -w\" \"nodemon -w dist -q dist/index.js\""
   }
 }
